@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Email</title>
+    <style>
+                body { font-family: Arial, sans-serif; }
+        .header, .footer { display: flex; justify-content: space-between; align-items: center; padding: 10px; }
+        .welcome-section { background-color: #e7fbfe; padding: 20px; display: flex; align-items: center; border-radius: 10px; }
+        .welcome-text { width: 50%; }
+        .animated-image { width: 50%; }
+
+        @media only screen and (max-width: 600px) {
+            .header, .footer, .welcome-section { flex-direction: column; }
+            .welcome-text, .animated-image { width: 100%; }
+            .imageAnimated { width: 100% !important; max-width: 100%  !important;}
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+            .content {
+                padding: 10px !important;
+            }
+            .logo, .social-media {
+                float: none !important;
+                display: block !important;
+                text-align: center !important;
+                margin: 0 auto !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+                <table class="container" width="600" border="0" cellspacing="0" cellpadding="0" style="width: 600px;">
+                    <tr>
+                        <td>
+                            <!-- Header -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="logo" style="padding: 20px; text-align: left; float: left;">
+                                        <img src="./assets//icons/logo.svg" alt="Company Logo" style="max-width: 150px;">
+                                    </td>
+                                    <td class="social-media" style="padding: 20px; text-align: right; float: right;">
+                                        <!-- Add your social media links here -->
+                                        <a href="your_linkedin_link"><img src="./assets//icons/gray-twitter.svg" alt="LinkedIn"></a>
+                                        <a href="your_facebook_link"><img src="./assets//icons/gray-facebook.svg" alt="Facebook"></a>
+                                        <a href="your_twitter_link"><img src="./assets//icons/gray-instagram.svg" alt="Twitter"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="welcome-section">
+                                <div class="welcome-text">
+                                    <h1>Welcome “<span style="color: #00A1C1; font-weight: bolder;">James</span>”</h1>
+                                    <p>We’re dying to hear your stories!</p>
+                                </div>
+                                <div class="animated-image">
+                                    <img src="./assets/img/animated.png" alt="Animated Image" width="100%" class="imageAnimated" style="max-width: 260px; height: auto; display: block;">
+                                </div>
+                            </div>
+                            <table  width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 20px; background-color: #ffffff;">
+                               <tr>
+                                 <td align="center">
+                                    <img  src="./assets/img/Line.png" alt="Company Logo" class="image" style="max-width: 500px; ">
+                                    <h1 style="color: #333333; font-weight: bolder; font-size: x-large; font-family: Arial, Helvetica, sans-serif;">Are you ready to find a whole new audience for the tales you have to tell?</h1>
+                                    <img  src="./assets/img/multi-colored.png" alt="Company Logo" class="image" style="max-width: 500px; height: 300px;">
+                                    <p style="color: #333333; font-weight: bolder; font-size: large; font-family: Arial, Helvetica, sans-serif;">We’re super thrilled to have you as a member of the <span style="color: #00A1C1; font-weight: bolder;">Storipod</span> family!</p>
+                                    <button style="background-color: #00A1C1; font-size: larger; border: #00A1C1; color: white; border-radius: 10px; font-weight: bolder; padding: 20px;">Get Started Here!</button>
+                                 </td>
+                               </tr>
+                            </table>
+                            <!-- Footer -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td align="center" style="padding: 20px; background-color: #000000; color: white;">
+                                        <img  src="./assets//icons/white-logo.svg" alt="Company Logo" style="max-width: 100px;">
+                                        <p>© 2024 Storipod</p>
+                                        <a href="your_facebook_link"><img src="./assets//icons/white-instagram.svg"alt="Facebook" style="margin: 0 5px;"></a>
+                                        <a href="your_twitter_link"><img src="./assets//icons/white-instagram.svg" alt="Twitter" style="margin: 0 5px;"></a>
+                                        <a href="your_linkedin_link"><img src="./assets//icons/white-twitter.svg" alt="LinkedIn" style="margin: 0 5px;"></a>
+                                        <p style="font-size: smaller;">Want to unsubscribe? Click here.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

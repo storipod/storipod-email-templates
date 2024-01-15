@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP for Signup</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f3f3f3; }
+        .container { background-color: white; margin: 0 auto; width: 100%; max-width: 600px; }
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f3f3f3; }
+        .body-content { padding: 20px; text-align: center; }
+        .otp { font-size: 50px; font-weight: 400; line-height: 28px; margin: 20px 0; }
+        .footer { font-size: 14px; padding: 10px; background-color: #f3f3f3; color: gray; }
+        .outer { padding: 20px; border-radius: 10px; }
+
+        /* Responsive design for mobile devices */
+        @media only screen and (max-width: 600px) {
+            .header, .footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./assets//icons/logo.svg" alt="Company Logo" style="max-width: 150px;">
+            <div>
+                <!-- Social Media Icons -->
+                <a href="your_linkedin_link"><img src="./assets//icons/gray-twitter.svg" alt="LinkedIn"></a>
+                                        <a href="your_facebook_link"><img src="./assets//icons/gray-facebook.svg" alt="Facebook"></a>
+                                        <a href="your_twitter_link"><img src="./assets//icons/gray-instagram.svg" alt="Twitter"></a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <p style="color: #000059;">Welcome, <span style="color: #195EF7;">{Customers Name}</span></p>
+            <p style="color: #121A26; font-weight: 600; font-size: x-large;">Time to let the world hear your amazing stories</p>
+            <div class="body-content">
+            <img src="./assets/img/phone-shuffle.png" style="max-width: 500px; height: 200px;" alt="Animated Image">
+            <p>To validate your email address,</p>
+            <p style="font-size: small; color: lightslategray;">Here is your one time password.</p>
+            <div class="otp">1234</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            This email was sent to <a href="mailto:morounfoluoyebanjo@gmail.com">morounfoluoyebanjo@gmail.com</a>. If you'd rather not receive this kind of email, <a href="unsubscribe_link">Unsubscribe</a>.
+            <br><br>
+            © 2023 Storipod LTD. For support email <a href="mailto:hello@storipod.com">hello@storipod.com</a>
+        </div>
+    </div>
+</body>
+</html>
